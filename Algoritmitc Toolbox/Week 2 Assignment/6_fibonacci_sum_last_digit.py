@@ -9,8 +9,8 @@ def fib(number):
     return b
 
 
-fibb, modul = [int(x) for x in input().split()]
-
+fibb = int(input())
+modul = 10
 sequence_list = []
 sequence_list.append(0)
 sequence_list.append(1)
@@ -29,12 +29,8 @@ var1 = fibb % (len(sequence_list)-1)
 if var1 == 0:
     print(0)
 else:
-    print(fib(var1) % modul)
+    print((fib(var1 + 2) - 1) % modul)
 
-# if fibb == 0:
-#     print(0)
-# else:
-#     print((fib(fibb, modul)))
 
 
 
