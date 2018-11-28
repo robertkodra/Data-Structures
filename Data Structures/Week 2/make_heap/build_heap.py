@@ -6,10 +6,11 @@ class HeapBuilder:
     self._swaps = []
     self._data = []
 
-  def ReadData(self):
+  def readData(self):
     n = int(input())
     self._data = [-1]
     self._data += [int(s) for s in input().split()]
+    # check if n is true
     assert n == len(self._data) - 1
 
   def WriteResponse(self):
